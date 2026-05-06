@@ -59,7 +59,11 @@ nav {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #2c5282 0%, #1a365d 100%);
+    background: linear-gradient(rgba(44, 82, 130, 0.85), rgba(26, 54, 93, 0.85)),
+                url('images/metro.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: #fff;
     padding: 5rem 2rem;
     text-align: center;
@@ -71,11 +75,13 @@ nav {
     font-weight: 700;
 }
 
+
 .hero .subtitle {
     font-size: 1.25rem;
     opacity: 0.9;
     max-width: 600px;
     margin: 0 auto;
+    color: aliceblue;
 }
 
 /* Main Content Container */
