@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Housing Affordability Crisis Analysis | DATA303 Final Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-brand">Housing Affordability Analysis</div>
+            <ul class="nav-links">
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#research-questions">Research Questions</a></li>
+                <li><a href="#findings">Findings</a></li>
+                <li><a href="#map">Interactive Map</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Housing Affordability Crisis</h1>
+            <p class="subtitle">Analyzing Price-to-Income Ratios Across U.S. Metro Areas (1980-2024)</p>
+        </section>
+
+        <!-- Overview Section -->
+        <section id="overview" class="overview">
+            <h2>Overview</h2>
+            <p>This project analyzes the dramatic shift in housing affordability across U.S. metropolitan areas from 1980 to 2024. Using price-to-income ratio data, we examine how the housing market has evolved from a period of relative stability to today's affordability crisis.</p>
+            <p>The price-to-income ratio measures how many years of median household income are needed to purchase a median-priced home. Historically, a ratio above 5.0 is considered "severely unaffordable."</p>
+        </section>
+
+        <!-- Research Questions -->
+        <section id="research-questions" class="research-questions">
+            <h2>Research Questions</h2>
+            <div class="questions-grid">
+                <div class="question-card">
+                    <h3>1. The Great Decoupling</h3>
+                    <p>How has the national average price-to-income ratio shifted from the "historical norm" (1980-2000) compared to the post-2020 era?</p>
+                </div>
+                <div class="question-card">
+                    <h3>2. The Affordability Ceiling</h3>
+                    <p>In 2024, how many metros have surpassed a ratio of 5.0 (the threshold for "severely unaffordable"), and how does this compare to 1980?</p>
+                </div>
+                <div class="question-card">
+                    <h3>3. Geographic Volatility</h3>
+                    <p>Which U.S. metro areas experienced the greatest long-term volatility in housing affordability, and how is that spatially distributed?</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Findings Section -->
+        <section id="findings" class="findings">
+            <h2>Key Findings</h2>
+
+            <!-- Finding 1: Trend Over Time -->
+            <div class="finding">
+                <h3>Housing Affordability Over Time</h3>
+                <p>The chart below shows the national average price-to-income ratio from 1980-2024. The gray area represents the "historical norm" period (1980-2000), while the red area highlights the post-2020 surge in prices.</p>
+                <div class="chart-container">
+                    <img src="images/trend.png" alt="Line chart showing housing price-to-income ratio trends from 1980 to 2024" loading="lazy">
+                </div>
+                <p class="caption">National average price-to-income ratio with 5-year moving average</p>
+            </div>
+
+            <!-- Finding 2: Explosion of Unaffordability -->
+            <div class="finding">
+                <h3>The Explosion of Unaffordability</h3>
+                <p>Comparing 1980 to 2024 reveals a dramatic increase in the number of metros where housing is severely unaffordable (ratio > 5.0).</p>
+                <div class="chart-container">
+                    <img src="images/bar.png" alt="Bar chart comparing number of unaffordable metros in 1980 vs 2024" loading="lazy">
+                </div>
+                <p class="caption">Number of metros with price-to-income ratio exceeding 5.0</p>
+            </div>
+        </section>
+
+        <!-- Interactive Map Section -->
+        <section id="map" class="map-section">
+            <h2>Geographic Distribution of Volatility</h2>
+            <p>The interactive map below shows which metro areas experienced the greatest volatility in housing affordability. Darker colors indicate higher volatility (standard deviation of year-over-year percentage changes).</p>
+            <div class="map-container">
+                <iframe src="images/map_with_tooltips.html" title="Interactive map showing housing affordability volatility across U.S. metros" loading="lazy"></iframe>
+            </div>
+        </section>
+
+        <!-- Data Summary -->
+        <section class="data-summary">
+            <h2>Data Summary</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-value">1980-2000</span>
+                    <span class="stat-label">Historical Baseline Period</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value">5.0+</span>
+                    <span class="stat-label">Severely Unaffordable Threshold</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value">380+</span>
+                    <span class="stat-label">Metro Areas Analyzed</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value">44 Years</span>
+                    <span class="stat-label">Time Period Covered</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>DATA303 Final Project | Housing Affordability Analysis</p>
+        <p>Data source: Federal Housing Finance Agency & U.S. Census Bureau</p>
+    </footer>
+</body>
+</html>
