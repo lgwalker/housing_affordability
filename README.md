@@ -2,6 +2,8 @@
 
 A DATA303 final project analyzing housing price-to-income ratios across U.S. metro areas from 1980-2024.
 
+https://lgwalker.github.io/housing_affordability/ 
+
 ## Research Questions
 
 1. **The Great Decoupling**: How has the national average price-to-income ratio shifted from the historical norm (1980-2000) compared to the post-2020 era?
