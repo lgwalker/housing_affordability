@@ -33,83 +33,6 @@
             <p>The price-to-income ratio measures how many years of median household income are needed to purchase a median-priced home. Historically, a ratio above 5.0 is considered "severely unaffordable."</p>
         </section>
 
-<!-- Methodology Section -->
-<section id="methodology" class="methodology">
-  <h2>Methodology & Data Cleaning</h2>
-  <div class="methodology-steps">
-    <!-- Step 1 -->
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <div class="step-number">01</div>
-          <h3>Data Collection</h3>
-          <p class="flip-hint">Hover to reveal details</p>
-        </div>
-        <div class="flip-card-back">
-          <h3>Data Collection</h3>
-          <p>Gathered housing price and income data from the Federal Housing Finance Agency (FHFA) and U.S. Census Bureau covering 380+ metropolitan statistical areas from 1980 to 2024.</p>
-        </div>
-      </div>
-    </div>
-    <!-- Step 2 -->
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <div class="step-number">02</div>
-          <h3>Data Cleaning</h3>
-          <p class="flip-hint">Hover to reveal details</p>
-        </div>
-        <div class="flip-card-back">
-          <h3>Data Cleaning</h3>
-          <p>Removed incomplete records and outliers. Handled missing values by interpolation for metro areas with gaps. Standardized metropolitan area names and ensured consistent geographic identifiers across all years.</p>
-        </div>
-      </div>
-    </div>
-    <!-- Step 3 -->
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <div class="step-number">03</div>
-          <h3>Ratio Calculation</h3>
-          <p class="flip-hint">Hover to reveal details</p>
-        </div>
-        <div class="flip-card-back">
-          <h3>Ratio Calculation</h3>
-          <p>Computed the ratio of median home prices to median household income for each metro area. Adjusted for inflation using CPI to ensure comparability across time periods.</p>
-        </div>
-      </div>
-    </div>
-    <!-- Step 4 -->
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <div class="step-number">04</div>
-          <h3>Volatility Analysis</h3>
-          <p class="flip-hint">Hover to reveal details</p>
-        </div>
-        <div class="flip-card-back">
-          <h3>Volatility Analysis</h3>
-          <p>Calculated year-over-year percentage changes and standard deviations to measure volatility in housing affordability across metros.</p>
-        </div>
-      </div>
-    </div>
-    <!-- Step 5 -->
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <div class="step-number">05</div>
-          <h3>Visualization</h3>
-          <p class="flip-hint">Hover to reveal details</p>
-        </div>
-        <div class="flip-card-back">
-          <h3>Visualization</h3>
-          <p>Generated time series charts, bar charts, and interactive maps to illustrate trends and geographic patterns in housing affordability.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
  <!-- Research Questions -->
         <section id="research-questions" class="research-questions">
             <h2>Research Questions</h2>
@@ -128,6 +51,59 @@
                 </div>
             </div>
         </section>
+        
+<!-- Methodology Section -->
+<section id="methodology" class="methodology">
+  <h2>Methodology & Data Cleaning</h2>
+  <div class="methodology-steps">
+    <!-- Step 1 -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <div class="step-number">01</div>
+          <h3>Data Collection</h3>
+          <p class="flip-hint">Hover for details</p>
+        </div>
+        <div class="flip-card-back">
+          <h3>Data Collection</h3>
+          <p>We acquired our dataset from the Harvard Joint Center for Housing Studies (JCHS) because they offer price-to-income ratios for all around the US and offer a large time span of information from 1980-2024.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Step 2 -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <div class="step-number">02</div>
+          <h3>Data Cleaning</h3>
+          <p class="flip-hint">Hover for details</p>
+        </div>
+        <div class="flip-card-back">
+          <h3>Data Cleaning</h3>
+          <p> For data cleaning we removed a duplicate geographic ID column and cut the 
+data from wide to long format, so years became a single variable. This made time-series 
+analysis and groupby operations much more straightforward. <p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <div class="step-number">03</div>
+          <h3>Visualization</h3>
+          <p class="flip-hint">Hover for details</p>
+        </div>
+        <div class="flip-card-back">
+          <h3>Visualization</h3>
+          <p> We generated a time series chart, bar chart, and an interactive map using matplotlib and folium to illustrate trends and geographic patterns in housing affordability.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
         <!-- Findings Section -->
         <section id="findings" class="findings">
