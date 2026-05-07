@@ -36,6 +36,4 @@ python -m http.server 8000
 ```
 Then navigate to `http://localhost:8000`
 
-## Data Source
-
-Federal Housing Finance Agency (FHFA) & U.S. Census Bureau
+Harvard Joint Center for Housing Studies (JCHS) 
